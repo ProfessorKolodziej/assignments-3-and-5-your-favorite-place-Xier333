@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Lily Script One', cursive;
+}
+
+p {
+    font-family: 'Mulish', sans-serif;
+}
+
+.hero {
+    background-image: url('./image/hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 80px;
+    color:#FF60AA;
+    text-shadow: 2px 2px 4px #2275C2;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 5%;
+}
+
+.attractions {
+    text-align: center;
+    margin: 4% 10%;
+}
+
+.attractions h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.attractions p {
+    font-size: 16px;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card-item {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-item img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-item img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+}
+
+.img-divider {
+    text-align: center;
+}
+
+.img-divider img {
+    height: auto;
+}
+
+.food {
+    text-align: left;
+    margin: 20px auto;
+    margin: 4% 10%;
+}
+
+.food h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.pill-label {
+    background-color: #FF60AA;
+    color: #ffffff;
+    font-family: 'Lily Script One', cursive;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+
+.credit {
+    text-align: left;
+    margin: 20px auto;
+    margin: 4% 10%;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+    .card-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-item {
+        width: calc(100% - 20px);
+    }
+    .attractions {
+        margin: 6% 4%;
+    }
+    .food {
+        margin: 6% 10%;
+    }
+}
